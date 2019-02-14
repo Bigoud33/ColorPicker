@@ -48,7 +48,39 @@
                     <view key="view" contentMode="scaleToFill" id="Hs6-kW-P9i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="SbV-MC-Z1H">
+                                <rect key="frame" x="139.5" y="166.5" width="96" height="334"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewz-Nb-8S4">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                        <state key="normal" image="greenIcon"/>
+                                        <connections>
+                                            <action selector="greenButton:" destination="8NO-EY-NAG" eventType="touchUpInside" id="Dse-gR-loS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAa-WR-h6g">
+                                        <rect key="frame" x="0.0" y="119" width="96" height="96"/>
+                                        <state key="normal" image="orangeIcon"/>
+                                        <connections>
+                                            <action selector="orangeButton:" destination="8NO-EY-NAG" eventType="touchUpInside" id="7oy-o3-1h6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9o-ac-7ik">
+                                        <rect key="frame" x="0.0" y="238" width="96" height="96"/>
+                                        <state key="normal" image="purpleIcon"/>
+                                        <connections>
+                                            <action selector="purpleButton:" destination="8NO-EY-NAG" eventType="touchUpInside" id="s9G-IS-Jtq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SbV-MC-Z1H" firstAttribute="centerX" secondItem="Hs6-kW-P9i" secondAttribute="centerX" id="2bl-Vf-lAi"/>
+                            <constraint firstItem="SbV-MC-Z1H" firstAttribute="centerY" secondItem="Hs6-kW-P9i" secondAttribute="centerY" id="8qC-GG-0zQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DFH-L3-8zL"/>
                     </view>
                 </viewController>
@@ -58,6 +90,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="greenIcon" width="96" height="96"/>
+        <image name="orangeIcon" width="96" height="96"/>
+        <image name="purpleIcon" width="96" height="96.5"/>
         <namedColor name="green">
             <color red="0.45882352941176469" green="0.74901960784313726" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0880C20222155F6C00683EB9 /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880C20122155F6C00683EB9 /* ColorAsset.swift */; };
 		08E690FD21F9A5FC004B36C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E690FC21F9A5FC004B36C6 /* AppDelegate.swift */; };
 		08E690FF21F9A5FC004B36C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E690FE21F9A5FC004B36C6 /* ViewController.swift */; };
 		08E6910221F9A5FC004B36C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E6910021F9A5FC004B36C6 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0880C20122155F6C00683EB9 /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
 		08E690F921F9A5FC004B36C6 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E690FC21F9A5FC004B36C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E690FE21F9A5FC004B36C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0880C20022155F1300683EB9 /* AssetsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				08E6910321F9A5FD004B36C6 /* Assets.xcassets */,
+				08E6912A21F9AD16004B36C6 /* Colors.xcassets */,
+				0880C20122155F6C00683EB9 /* ColorAsset.swift */,
+			);
+			path = AssetsGroup;
+			sourceTree = "<group>";
+		};
 		08E690F021F9A5FC004B36C6 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +113,11 @@
 		08E690FB21F9A5FC004B36C6 /* ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
+				0880C20022155F1300683EB9 /* AssetsGroup */,
 				08E690FC21F9A5FC004B36C6 /* AppDelegate.swift */,
 				08E690FE21F9A5FC004B36C6 /* ViewController.swift */,
 				08E6910021F9A5FC004B36C6 /* Main.storyboard */,
 				08E6912C21F9B1A7004B36C6 /* ColorPickerViewController.swift */,
-				08E6910321F9A5FD004B36C6 /* Assets.xcassets */,
-				08E6912A21F9AD16004B36C6 /* Colors.xcassets */,
 				08E6910521F9A5FD004B36C6 /* LaunchScreen.storyboard */,
 				08E6910821F9A5FD004B36C6 /* Info.plist */,
 			);
@@ -265,6 +276,7 @@
 			files = (
 				08E690FF21F9A5FC004B36C6 /* ViewController.swift in Sources */,
 				08E690FD21F9A5FC004B36C6 /* AppDelegate.swift in Sources */,
+				0880C20222155F6C00683EB9 /* ColorAsset.swift in Sources */,
 				08E6912D21F9B1A7004B36C6 /* ColorPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
