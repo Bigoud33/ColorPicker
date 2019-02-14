@@ -9,8 +9,6 @@
 import UIKit
 
 class ColorPickerViewController: UIViewController {
-    
-    weak var delegate: ColorPickerViewDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,16 +16,18 @@ class ColorPickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var completionHandler: ((UIColor) -> Void)?
+    
     @IBAction func greenButton(_ sender: Any) {
-        self.delegate?.userDidChooseColor(color: UIColor(named: ColorAsset.green.rawValue)!)
+        self.completionHandler?(ColorAsset.green.color)
     }
     
     @IBAction func orangeButton(_ sender: Any) {
-        self.delegate?.userDidChooseColor(color: UIColor(named: ColorAsset.orange.rawValue)!)
+        self.completionHandler?(ColorAsset.orange.color)
     }
     
     @IBAction func purpleButton(_ sender: Any) {
-        self.delegate?.userDidChooseColor(color: UIColor(named: ColorAsset.purple.rawValue)!)
+        self.completionHandler?(ColorAsset.purple.color)
     }
     
     /*
@@ -40,8 +40,4 @@ class ColorPickerViewController: UIViewController {
     }
     */
 
-}
-
-protocol ColorPickerViewDelegate: class {
-    func userDidChooseColor(color: UIColor)
 }
