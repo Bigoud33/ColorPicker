@@ -50,36 +50,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="SbV-MC-Z1H">
-                                <rect key="frame" x="139.5" y="166.5" width="96" height="334"/>
+                                <rect key="frame" x="0.0" y="160.5" width="375" height="346"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewz-Nb-8S4">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
-                                        <state key="normal" image="greenIcon"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="j2M-OM-Qwp"/>
+                                        </constraints>
+                                        <state key="normal" title="Green" backgroundImage="greenIcon"/>
                                         <connections>
                                             <action selector="greenButton:" destination="8NO-EY-NAG" eventType="touchUpInside" id="Dse-gR-loS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAa-WR-h6g">
-                                        <rect key="frame" x="0.0" y="119" width="96" height="96"/>
-                                        <state key="normal" image="orangeIcon"/>
+                                        <rect key="frame" x="0.0" y="123" width="375" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Uxo-VX-WQ2"/>
+                                        </constraints>
+                                        <state key="normal" title="Orange" backgroundImage="orangeIcon"/>
                                         <connections>
                                             <action selector="orangeButton:" destination="8NO-EY-NAG" eventType="touchUpInside" id="7oy-o3-1h6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9o-ac-7ik">
-                                        <rect key="frame" x="0.0" y="238" width="96" height="96"/>
-                                        <state key="normal" image="purpleIcon"/>
+                                        <rect key="frame" x="0.0" y="246" width="375" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="FKn-GV-kLM"/>
+                                        </constraints>
+                                        <state key="normal" title="Purple" backgroundImage="purpleIcon"/>
                                         <connections>
                                             <action selector="purpleButton:" destination="8NO-EY-NAG" eventType="touchUpInside" id="s9G-IS-Jtq"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="w9o-ac-7ik" firstAttribute="leading" secondItem="SbV-MC-Z1H" secondAttribute="leading" id="6cz-tr-yOq"/>
+                                    <constraint firstAttribute="trailing" secondItem="w9o-ac-7ik" secondAttribute="trailing" id="9tN-hC-Kmt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ewz-Nb-8S4" secondAttribute="trailing" id="Nwt-hz-1fb"/>
+                                    <constraint firstItem="ewz-Nb-8S4" firstAttribute="leading" secondItem="SbV-MC-Z1H" secondAttribute="leading" id="gLH-UW-0Bi"/>
+                                    <constraint firstItem="nAa-WR-h6g" firstAttribute="leading" secondItem="SbV-MC-Z1H" secondAttribute="leading" id="iOa-uM-2UN"/>
+                                    <constraint firstAttribute="trailing" secondItem="nAa-WR-h6g" secondAttribute="trailing" id="wMX-ad-KoW"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SbV-MC-Z1H" firstAttribute="centerX" secondItem="Hs6-kW-P9i" secondAttribute="centerX" id="2bl-Vf-lAi"/>
                             <constraint firstItem="SbV-MC-Z1H" firstAttribute="centerY" secondItem="Hs6-kW-P9i" secondAttribute="centerY" id="8qC-GG-0zQ"/>
+                            <constraint firstItem="SbV-MC-Z1H" firstAttribute="leading" secondItem="DFH-L3-8zL" secondAttribute="leading" id="VRS-ie-X2O"/>
+                            <constraint firstItem="DFH-L3-8zL" firstAttribute="trailing" secondItem="SbV-MC-Z1H" secondAttribute="trailing" id="jIt-BR-BCu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DFH-L3-8zL"/>
                     </view>
@@ -90,9 +109,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="greenIcon" width="96" height="96"/>
-        <image name="orangeIcon" width="96" height="96"/>
-        <image name="purpleIcon" width="96" height="96.5"/>
+        <image name="greenIcon" width="25" height="25"/>
+        <image name="orangeIcon" width="25" height="25"/>
+        <image name="purpleIcon" width="25" height="25"/>
         <namedColor name="green">
             <color red="0.45882352941176469" green="0.74901960784313726" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
