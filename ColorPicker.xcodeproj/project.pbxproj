@@ -15,6 +15,7 @@
 		08E6911221F9A5FD004B36C6 /* ColorPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6911121F9A5FD004B36C6 /* ColorPickerTests.swift */; };
 		08E6911D21F9A5FD004B36C6 /* ColorPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6911C21F9A5FD004B36C6 /* ColorPickerUITests.swift */; };
 		08E6912B21F9AD16004B36C6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E6912A21F9AD16004B36C6 /* Colors.xcassets */; };
+		08E6912D21F9B1A7004B36C6 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6912C21F9B1A7004B36C6 /* ColorPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		08E6911C21F9A5FD004B36C6 /* ColorPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerUITests.swift; sourceTree = "<group>"; };
 		08E6911E21F9A5FD004B36C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08E6912A21F9AD16004B36C6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		08E6912C21F9B1A7004B36C6 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				08E690FC21F9A5FC004B36C6 /* AppDelegate.swift */,
 				08E690FE21F9A5FC004B36C6 /* ViewController.swift */,
 				08E6910021F9A5FC004B36C6 /* Main.storyboard */,
+				08E6912C21F9B1A7004B36C6 /* ColorPickerViewController.swift */,
 				08E6910321F9A5FD004B36C6 /* Assets.xcassets */,
 				08E6912A21F9AD16004B36C6 /* Colors.xcassets */,
 				08E6910521F9A5FD004B36C6 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			files = (
 				08E690FF21F9A5FC004B36C6 /* ViewController.swift in Sources */,
 				08E690FD21F9A5FC004B36C6 /* AppDelegate.swift in Sources */,
+				08E6912D21F9B1A7004B36C6 /* ColorPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8NO-EY-NAG" kind="show" id="VmG-s2-9Yp"/>
+                                    <segue destination="8NO-EY-NAG" kind="show" identifier="pickColor" id="VmG-s2-9Yp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,10 +41,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Color Picker View Controller-->
         <scene sceneID="orJ-Sg-Tog">
             <objects>
-                <viewController id="8NO-EY-NAG" sceneMemberID="viewController">
+                <viewController id="8NO-EY-NAG" customClass="ColorPickerViewController" customModule="ColorPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hs6-kW-P9i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PgR-kJ-2fF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808" y="25"/>
+            <point key="canvasLocation" x="1678" y="27"/>
         </scene>
     </scenes>
     <resources>
